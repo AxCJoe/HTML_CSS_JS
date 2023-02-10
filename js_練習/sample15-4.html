@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>サンプル</title>
+        <script>
+            function boxCheck() {
+            var str = "";
+            for (i = 0; i < 5; i++) {
+                if (document.chbox.elements[i].checked) {
+                    if (str != "") {
+                        str = str + ",";
+                    }
+                    str = str + document.chbox.elements[i].value;
+                }
+            }
+            if (str == "") {
+                alert("どれが選択してください");
+            } else {
+                alert(str + "が選択されました")
+            }
+        }
+        </script>
+         
+    </head>
+    <body>
+        <form name="chbox">
+            あなたの好きなスポーツは？(複数可)<br>
+            <input type="checkbox" value="サッカー">サッカー<br>
+            <input type="checkbox" value="バスケットボール">バスケットボール<br>
+            <input type="checkbox" value="ジョギング">ジョギング<br>
+            <input type="checkbox" value="水泳">水泳<br>
+            <input type="checkbox" value="他">この中には無い<br>
+            <input type="button" value="確認" onclick="boxCheck()">
+        </form>
+    </body>
+</html>

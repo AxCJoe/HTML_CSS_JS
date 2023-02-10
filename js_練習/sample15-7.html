@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script>
+        function wupBtn() {
+                 //名前と感想の欄のテキストを変数に代入する
+            var namae = document.send.namae.value;
+            var kanso = document.send.kanso.value;
+                //名前若しくは感想欄のどちらかが空かチェック
+            if ((namae == "") || (kanso == "")) {
+                //どちらか空であれば、ボタンを押せなくする
+                document.send.btn.disabled = true;
+            } else {
+                //両方とも書き込まれていたら、ボタンを押せるようにする
+                document.send.btn.disabled = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="send">
+        お名前：<input type="text" value="" name="namae" onchange="wupBtn()">
+        <br>
+        <br>
+        感想：<textarea rows="2" cols="20" name="kanso" onchange="wupBtn()"></textarea>
+        <br>
+        <br>
+        <input type="button" value="送信" name="btn" disabled>
+    </form>
+</body>
+</html>

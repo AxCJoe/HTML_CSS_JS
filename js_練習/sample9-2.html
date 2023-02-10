@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>サンプル</title>
+    </head>
+    <body>
+        <script>
+            var str = "グローバル";
+            function func1(){
+                var str = "func1";
+                document.write("strは" + str + "です。<br>");
+            }
+            function func2(){
+                var str = "func2";
+                document.write("strは" + str + "です。<br>");
+            }
+            func1();
+            func2();
+            document.write("strは" + str + "です。<br>");
+        </script>
+    </body>
+</html>

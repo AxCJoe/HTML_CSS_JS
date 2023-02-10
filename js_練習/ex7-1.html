@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ex7</title>
+    </head>
+    <body>
+        <script>
+            //時間取得
+            var now = new Date();
+            var hour = now.getHours();
+            
+            //条件分岐
+            if ( 0 <= hour && hour <= 12 ){
+                document.write("おはようございます！"); //<=12時、"おはようございます！"を出力
+            } else {
+                if ( 13 <= hour && hour <= 18 ) {
+                document.write("こんにちは！"); //<=18時、"こんにちは！"を出力
+            } else
+                document.write("こんばんは！");//以降、"こんばんは！"を出力
+
+            }
+            
+
+        </script>
+    </body>
+</html>

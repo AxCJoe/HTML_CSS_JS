@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>サンプル</title>
+        <script>
+            function sample2() {
+            var hoge = sample2_2form.chkbox.checked;
+            if (hoge == true) {
+                alert("チェックが入っています");
+            } else {
+                alert("チェックが入っていません");
+            }
+        }
+        </script>
+         
+    </head>
+    <body>
+        <form name="sample2_2form">
+            <input type="checkbox" name="chkbox" />チェックボックス
+            <input type="button" value="チェック" onclick="sample2()">
+        </form>
+    </body>
+</html>

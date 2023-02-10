@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Hello World!</p>
+        <script>
+            var p = document.createElement('p');
+            p.textContent = 'こんにちは!'; //document内のbody要素の中にpタグを挿入する
+            document.body.appendChild(p);
+            console.log(document.body);
+        </script>
+    </body>
+</html>

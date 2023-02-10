@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+        <script> 
+            function check() {
+                var flag = 0;
+            // 設定開始（チェックする項目を設定してください）
+
+	        if(document.send.age.value.match(/[^0-9]+/)){
+
+                flag = 1;
+            
+            }
+            if(flag){
+
+                window.alert('エラーメッセージ:半角数字以外が入力されています'); // 数字以外が入力された場合は警告ダイアログを表示
+                return false; // 送信を中止
+
+            }else{
+
+                return true; // 送信を実行
+
+            }
+
+            }
+
+            // -->
+            
+            
+            //テキストボックスの文字をリセットする。
+            function clr() {
+            document.send.namae.value = "";
+            document.send.sex.value = "";
+            document.send.age.value = "";
+            }
+        </script>
+            
+
+    </head>
+    <body>
+        
+        <form name="send"onSubmit="return check()">
+            姓名：
+            <input type="text" name="namae" value=""><br><br>
+            
+            性別：
+            <input type="radio" name="sex" value="男" >男性
+            <input type="radio" name="sex" value="女" >女性<br><br>
+            
+            年齢：
+            <input type="text"  name="age" ><br><br>
+            
+
+            <input type="submit" value="消去" onclick="clr()"><br>
+            <p><input type="submit" value="送信"></p>
+            
+            
+        </form>
+            
+     
+        
+    </body>
+</html>

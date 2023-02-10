@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+    <script type="text/javascript">
+        function sample2_4() {
+            var selectValue = sample2_4form.dropList.value;
+            alert(selectValue + "が選択されています");
+        }
+    </script>
+</head>
+<body>
+    <form name="sample2_4form">
+        <select name="dropList">
+            <option value="ドロップ1">ドロップ1</option>
+            <option value="ドロップ2">ドロップ2</option>
+            <option value="ドロップ3">ドロップ3</option>
+        </select>
+        <input type="button" value="選択" onclick="sample2_4()">
+    </form>
+</body>
+</html>

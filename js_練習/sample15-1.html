@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>サンプル</title>
+        <script>
+            function sample2_1() {
+            //テキストエリアの値を取得
+            var hoge = document.sample2_1form.textbox.value;
+            alert(hoge + "が入力されました。");
+        }
+        </script>
+         
+    </head>
+    <body>
+        <form name="sample2_1form">
+            <input type="text" name="textbox">
+            <input type="button" value="sample2_1" onclick="sample2_1()">
+        </form>
+    </body>
+</html>

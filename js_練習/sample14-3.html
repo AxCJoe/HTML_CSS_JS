@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <input type="hidden" name="greeting" value="Hello" />
+        <input type="hidden" name="greeting" value="World" />
+        <script>
+            var elems = document.getElementsByName('greeting');
+            document.write(elems[0].value + "<br>");
+            document.write(elems[1].value);
+        </script>
+    </body>
+</html>

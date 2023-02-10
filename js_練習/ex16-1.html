@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test123" class="testABC">Hello world!</p>
+    <input type="button" value="縮小" onclick="myfunc()">
+    <input type="button" value="拡大" onclick="Big()">
+    
+    <script>
+        function myfunc() {
+            var myh2 = document.getElementById("test123");
+            myh2.classList.toggle("testABC");
+            myh2.classList.add("testEFG");
+            
+        }
+            function Big() {
+            var Bi2 = document.getElementById("test123");
+            Bi2.classList.toggle("testHIJ");
+            Bi2.classList.add("testLMN");
+            
+        }
+            function Big() {
+
+    </script>
+    <style>
+        .testABC {
+            font-size: 50px;
+        }
+        .testEFG {
+            font-size: 20px;
+        }
+        .testHIJ{
+            font-size: 20px;
+        }
+
+        .testLMN{
+            font-size: 50px;
+        }
+    </style>
+</body>
+</html>

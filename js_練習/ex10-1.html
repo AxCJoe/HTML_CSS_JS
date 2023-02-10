@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScriptの練習</title>
+
+        <script>
+            var stru1 ={
+                tanka:100
+                };
+                var stru2 ={
+                tanka:200,
+                countVal:function(){
+                    console.log(this.tanka*0.08);
+                }
+                };
+                stru1.countVal.call(stru2)
+        </script>
+    </head>
+    <body></body>
+</html>

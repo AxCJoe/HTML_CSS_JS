@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScriptの練習</title>
+        <script>
+            var obj1={
+                name:"ITJOB",
+                greet:function(){document.write(this.name+"です、こんにちは");}
+            };
+            var obj2={
+                name:"ソフトユージング"
+            };
+            obj1.greet.call(obj2);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

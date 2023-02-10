@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>サンプル</title>
+        <script>
+            function display() {
+            var str1 = document.welcome.txtbox.value;
+            var str2 = document.welcome.txtarea.value;
+            alert(str1 + "さんの感想は" + str2 + "です。");
+        }
+    //テキストボックスの文字を操作する
+            function clr() {
+                document.welcome.txtbox.value = "";
+                document.welcome.txtarea.value = "";
+            }
+            
+        </script>
+         
+    </head>
+    <body>
+        <form name="welcome">
+            お名前：<input type="text" name="txtbox" value=""><br><br>
+            感想：<textarea name="txtarea" value="" rows="2" cols="20"></textarea><br><br>
+            <input type="button" value="感想の表示" onclick="display()"><br>
+            <input type="button" value="消去" onclick="clr()"><br>
+        </form>
+    </body>
+</html>
